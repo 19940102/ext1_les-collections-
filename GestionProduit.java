@@ -19,7 +19,14 @@ public class GestionProduit {
 produits.get(0).setPrix(250000);
 for (produit p:produits) {
 System.out.println(p);
-
+ Scanner scanner =new Scanner(System.in);
+System.out.println( "entrez un mot clé");
+String keyWord=scanner.next();
+for (produit p:produits){
+    if (p.getNom().contains(keyWord)){
+        System.out.println(p);
+    }
 }
 }
 }
+  }  
